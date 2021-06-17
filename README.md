@@ -1,3 +1,3 @@
 # LeetCode
-Python
+Python\\
 My algorithm problems practice.
