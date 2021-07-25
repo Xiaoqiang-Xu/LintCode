@@ -16,5 +16,6 @@ class Solution:
                     triplet.sort()
                     if triplet not in results:
                         results.append(triplet)
-                inner_set.add(numbers[j])
+                else:        
+                    inner_set.add(numbers[j])
         return results
