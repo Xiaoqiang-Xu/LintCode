@@ -24,4 +24,5 @@ class Solution:
                 break
             left -= 1
             right += 1
+        # pay attention to the string start and end point
         return string[left + 1 : right]
