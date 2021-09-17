@@ -1,24 +1,14 @@
 class Solution:
     """
-    @param nums: an array of integer
-    @param target: An integer
-    @return: an integer
+    @param k: An integer
+    @param nums: An integer array
+    @return: kth smallest element
     """
-    def twoSum2(self, nums, target):
+    # O(nlogn)
+    def kthSmallest(self, k, nums):
         # write your code here
         n = len(nums)
-        if n <= 1:
-            return 0
-        
+        if n < k:
+            return
         nums.sort()
-        count = 0
-        i, j = 0, n - 1
-        while i < j:
-            if nums[i] + nums[j] <= target:
-                i += 1
-            else:
-                count = count + j - i
-                j -= 1
-    
-        return count
-
+        return nums[k - 1]
