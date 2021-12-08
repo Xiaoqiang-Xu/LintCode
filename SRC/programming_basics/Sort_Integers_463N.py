@@ -10,9 +10,6 @@ class Solution:
 
         if n <= 1:
             return A
-        
-        temp = A[0]
-        result = []
         for i in range(n):
             min_index = i
             for j in range(i + 1, n):
@@ -21,4 +18,5 @@ class Solution:
             A[i], A[min_index] = A[min_index], A[i]
         
         return A
+
 # using the selection sort O(n^2)
