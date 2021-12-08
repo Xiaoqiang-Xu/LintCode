@@ -48,5 +48,38 @@ class Solution:
         return A
     # using the bubble sort with some optimization (after ith pass, the last i element are already sorted. We 
     # can also stop the algorithm when we detect that no swap is happening)
+    
+    class Solution:
+    """
+    @param A: an integer array
+    @return: nothing
+    """
+    def sortIntegers(self, A):
+        # write your code here
+
+        n = len(A)
+
+        if n <= 1:
+            return A
+        
+        for i in range(1, n):
+            temp = A[i]
+            j = i - 1
+            while j >= 0 and A[j] > temp:
+                A[j + 1] = A[j]
+                j -= 1
+            A[j + 1] = temp
+        
+        return A
+  # using insertion sort
+  # pay attention to the usage of while/for loop
+  # remove larger elements one digit to the right
+
+
+
+                
+
+       
+
 
        
